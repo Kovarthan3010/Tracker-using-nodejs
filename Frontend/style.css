@@ -1,0 +1,18 @@
+*
+{
+    
+    background-color: plum;
+}
+#header
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+padding:40px;
+border: 2px solid plum;
+height: 1px;
+width: 100%;
+color: violet;
+background-color: white;
+}
