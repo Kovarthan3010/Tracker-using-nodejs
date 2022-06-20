@@ -1,18 +1,42 @@
 *
 {
-    
+    border: 0px;
+    margin: 0%;
     background-color: plum;
 }
 #header
 {
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content:center;
 text-align: center;
-padding:40px;
-border: 2px solid plum;
-height: 1px;
+
+height: 15%;
 width: 100%;
 color: violet;
 background-color: white;
+}
+#topheading
+{
+    font-style: italic;
+    font-size:60px;
+    font-stretch: wider;
+    color: greenyellow;
+    background-color: white;
+}
+#options
+{
+display: flex;
+flex-direction:row;
+justify-content:space-around;
+text-align: center;
+vertical-align: middle;
+}
+.optionbutton{
+    background-color: greenyellow;
+    color: plum;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 50px;
+    width : 100px;
 }
