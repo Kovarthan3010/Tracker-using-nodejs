@@ -2,7 +2,7 @@
 {
     border: 0px;
     margin: 0%;
-    background-color: plum;
+    background-color: white;
 }
 #header
 {
@@ -21,7 +21,7 @@ background-color: white;
     font-style: italic;
     font-size:60px;
     font-stretch: wider;
-    color: greenyellow;
+    color: blue;
     background-color: white;
 }
 #options
@@ -29,14 +29,24 @@ background-color: white;
 display: flex;
 flex-direction:row;
 justify-content:space-around;
-text-align: center;
+
 vertical-align: middle;
 }
 .optionbutton{
-    background-color: greenyellow;
-    color: plum;
-    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border: 2px solid darkblue;
     border-radius: 30px;
     height: 50px;
     width : 100px;
+    margin-top: 20%;
+}
+button:hover
+{
+    height: 65px;
+    width : 110px;
+    background-color: blue;
+    color: white;
+    font-size: larger;
+    
 }
