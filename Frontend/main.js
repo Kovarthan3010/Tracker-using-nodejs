@@ -2,8 +2,11 @@ var express = require('express');
 const path = require('path');
 var app = express();
 var fs=require('fs');
-var bodyParser = require('body-parser');
+//var bodyParser = require('body-parser');
 app.listen(8081);
+app.use(express.urlencoded({
+    extended : true 
+}));
 app.get("/",function(req,res)
 {
     
@@ -20,6 +23,16 @@ app.get("/remove.html",function(req,res)
 
 app.post("/add.html",function(req,res)
 {
-  var input=req.body.input;
-  console.log(input);
+  var input=req.body.postdetail;
+  fs.writeFile('txtfile.txt',input,function(err , data)
+  {
+    if(err)
+    {
+        res.send(err);
+    }
+    else
+    {
+        res.redirect('/');
+    }
+  })
 })
